@@ -1,22 +1,23 @@
 [
   {
-    "title": "Morning light",
-    "medium": "Oil on canvas",
-    "image": "placeholder-1.svg",
-    "series": "Domestic light",
+    "title": "North shore",
+    "medium": "Ink on paper",
+    "image": "art-1.png",
+    "series": "Canada",
     "notes": "Available as original."
   },
   {
-    "title": "Coastal study",
-    "medium": "Watercolour on paper",
-    "image": "placeholder-2.svg",
-    "series": "Coastal",
-    "notes": "Limited edition print."
+    "title": "Dogs",
+    "medium": "Acrylic pen",
+    "image": "art-2.png",
+    "series": "Posca dogs",
+    "notes": "Commissioned dogs available."
   },
   {
-    "title": "Evening garden",
-    "medium": "Acrylic on board",
-    "image": "placeholder-3.svg",
-    "notes": "Standalone piece."
+    "title": "Cats",
+    "medium": "Acrylic pen",
+    "image": "art-3.png",
+    "series": "Posca cats",
+    "notes": "Commissioned cats available."
   }
 ]

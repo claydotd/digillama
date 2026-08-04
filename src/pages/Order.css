@@ -1,0 +1,29 @@
+.page-order {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btn-order {
+    background-color: var(--color-green);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-top: 1em;
+}
+
+.btn-order:hover {
+    background-color: var(--color-accent-hover);
+}

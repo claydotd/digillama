@@ -6,8 +6,7 @@ export default function Contact() {
       <header className="page-header">
         <h1>Contact</h1>
         <p>
-          Interested in a purchase or commission? Send a
-          message and I&apos;ll get back to you.
+          Commission or collab? Send a message and I&apos;ll get back to you as soon as I can.
         </p>
       </header>
 
@@ -42,11 +41,11 @@ export default function Contact() {
               <strong>Instagram</strong>
               <br />
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/digi_llama/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                @artistname
+                @digi_llama
               </a>
             </li>
           </ul>
