@@ -1,0 +1,82 @@
+.hero {
+  padding-block: 4rem 3rem;
+  text-align: center;
+}
+
+.hero-eyebrow {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.hero-lead {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  max-width: 48ch;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.btn--outline {
+  color: var(--color-accent);
+  background-color: transparent;
+  border: 1px solid var(--color-accent);
+}
+
+.btn--outline:hover {
+  color: #fff;
+  background-color: var(--color-accent);
+}
+
+.featured {
+  padding-block: 2rem 1rem;
+}
+
+.featured h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.featured-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.featured-placeholder {
+  aspect-ratio: 4 / 3;
+  background-color: var(--color-bg-alt);
+}
+
+.featured-card h3,
+.featured-card p {
+  padding-inline: 1rem;
+}
+
+.featured-card h3 {
+  padding-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.featured-card p {
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
