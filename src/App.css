@@ -6,15 +6,33 @@
 }
 
 .site-content {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
   min-width: 0;
 }
 
+.site-blobs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.site-content > main,
+.site-content > .site-footer {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--nav-height);
+}
+
 @media (min-width: 768px) {
-  .site-content {
-    margin-left: var(--sidebar-width);
+  .site-content > main,
+  .site-content > .site-footer {
+    padding-top: 0;
+    padding-left: var(--sidebar-width);
   }
 }
 

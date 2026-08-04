@@ -1,6 +1,8 @@
 .nav-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   /* background-color: var(--color-nav-bg); */
   /* border-bottom: 1px solid var(--color-border); */
@@ -91,14 +93,11 @@
 
 @media (min-width: 768px) {
   .nav-header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    right: auto;
     width: var(--sidebar-width);
     height: 100svh;
     border-bottom: none;
     /* border-right: 1px solid var(--color-border); */
-    
   }
 
   .nav-inner {
