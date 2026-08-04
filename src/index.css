@@ -157,6 +157,7 @@ main {
   width: 50%;
   height: 50%;
   z-index: -1;
+  animation: float-blob-1 14s ease-in-out infinite;
 }
 
 .blob-2 {
@@ -166,6 +167,7 @@ main {
   width: 100%;
   height: 100%;
   z-index: -1;
+  animation: float-blob-2 18s ease-in-out infinite;
 }
 
 .blob-3 {
@@ -175,4 +177,47 @@ main {
   width: 80%;
   height: 80%;
   z-index: -1;
+  animation: float-blob-3 22s ease-in-out infinite;
+}
+
+@keyframes float-blob-1 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-28px);
+  }
+}
+
+@keyframes float-blob-2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(36px);
+  }
+}
+
+@keyframes float-blob-3 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob-1,
+  .blob-2,
+  .blob-3 {
+    animation: none;
+  }
+
+  .site-blobs path animate {
+    display: none;
+  }
 }
