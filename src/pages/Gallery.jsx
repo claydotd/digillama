@@ -1,34 +1,35 @@
 import './Gallery.css'
-
-const placeholderWorks = Array.from({ length: 9 }, (_, i) => ({
-  id: i + 1,
-  title: `Artwork title ${i + 1}`,
-  medium: 'Medium',
-  year: '2026',
-  price: '£000',
-}))
+import artwork from '../artwork.json'
+import { artworkImages } from '../artworkImages.js'
 
 export default function Gallery() {
   return (
     <div className="page gallery container">
       <header className="page-header">
         <h1>Gallery</h1>
-        <p>
-          A selection of available originals and prints. Replace these
-          placeholders with your own images and details.
-        </p>
+        <p>A selection of available originals and prints.</p>
       </header>
 
       <div className="gallery-grid">
-        {placeholderWorks.map((work) => (
-          <article key={work.id} className="gallery-item">
-            <div className="gallery-image" aria-hidden="true" />
+        {artwork.map((work, index) => (
+          <article key={`${work.image}-${index}`} className="gallery-item">
+            {artworkImages[work.image] ? (
+              <img
+                className="gallery-image"
+                src={artworkImages[work.image]}
+                alt={work.title}
+              />
+            ) : (
+              <div
+                className="gallery-image gallery-image--missing"
+                aria-hidden="true"
+              />
+            )}
             <div className="gallery-info">
               <h3>{work.title}</h3>
-              <p>
-                {work.medium} · {work.year}
-              </p>
-              <p className="gallery-price">{work.price}</p>
+              {work.series && <p className="gallery-series">{work.series}</p>}
+              <p>{work.medium}</p>
+              {work.notes && <p className="gallery-notes">{work.notes}</p>}
             </div>
           </article>
         ))}

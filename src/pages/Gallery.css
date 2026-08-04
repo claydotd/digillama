@@ -17,7 +17,14 @@
 }
 
 .gallery-image {
+  display: block;
+  width: 100%;
   aspect-ratio: 1;
+  object-fit: cover;
+  background-color: var(--color-bg-alt);
+}
+
+.gallery-image--missing {
   background-color: var(--color-bg-alt);
 }
 
@@ -29,13 +36,17 @@
   margin-bottom: 0.25rem;
 }
 
+.gallery-series {
+  margin-bottom: 0.25rem;
+  font-size: 0.8125rem;
+  font-style: italic;
+}
+
 .gallery-info p {
   font-size: 0.875rem;
   color: var(--color-text-muted);
 }
 
-.gallery-price {
+.gallery-notes {
   margin-top: 0.5rem;
-  font-weight: 600;
-  color: var(--color-heading);
 }
