@@ -6,7 +6,7 @@ export default function Contact() {
       <header className="page-header">
         <h1>Contact</h1>
         <p>
-          Interested in a purchase, commission, or collaboration? Send a
+          Interested in a purchase or commission? Send a
           message and I&apos;ll get back to you.
         </p>
       </header>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 /* =============================================
    THEME — edit these values to change the look
    ============================================= */
@@ -7,17 +8,18 @@
   --color-bg: #faf9f7;
   --color-bg-alt: #f0eeea;
   --color-surface: #ffffff;
-  --color-text: #9D8189;
-  --color-text-muted: #D8E2DC;
+  --color-text: #11151C;
+  --color-text-muted: #9D8189;
   --color-heading: #11151C;
   --color-accent: #FFCAD4;
   --color-accent-hover: #F4ACB7;
-  --color-border: #D8E2DC;
+  --color-border: #FFCAD4;
   --color-nav-bg: rgba(250, 249, 247, 0.92);
-  --sidebar-width: 240px;
+  --color-green: #D8E2DC;
+  --sidebar-width: 180px;
 }
 
-/* Fonts — add @import or link tags in index.html for web fonts */
+/* Fonts */
 :root {
   --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-heading: Grand Hotel, 'Times New Roman', serif;
@@ -35,10 +37,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
@@ -142,4 +146,32 @@ main {
 .btn:hover {
   background-color: var(--color-accent-hover);
   color: #fff;
+}
+
+/* blobs */
+.blob-1 {
+  position: absolute;
+  top: -100px;
+  left: -40px;
+  width: 50%;
+  height: 50%;
+  z-index: -1;
+}
+
+.blob-2 {
+  position: absolute;
+  top: 30%;
+  left: -5%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.blob-3 {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  z-index: -1;
 }
