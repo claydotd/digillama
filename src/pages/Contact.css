@@ -23,7 +23,12 @@
   color: var(--color-heading);
 }
 
+.form-required {
+  color: var(--color-text-muted);
+}
+
 .form-field input,
+.form-field select,
 .form-field textarea {
   font-family: var(--font-body);
   font-size: 1rem;
@@ -34,10 +39,36 @@
   border-radius: 4px;
 }
 
+.form-field select {
+  cursor: pointer;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.8;
+}
+
 .form-field input:focus,
+.form-field select:focus,
 .form-field textarea:focus {
   outline: 2px solid var(--color-accent);
   outline-offset: 1px;
+}
+
+.contact-form-hint {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.contact-form .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.contact-form .btn:hover:not(:disabled) {
+  background-color: var(--color-accent-hover);
 }
 
 .contact-details ul {

@@ -4,20 +4,28 @@
     "medium": "Ink on paper",
     "image": "art-1.png",
     "series": "Canada",
-    "notes": "Available as original."
+    "notes": "Available as original.",
+    "orderable": true
   },
   {
     "title": "Dogs",
     "medium": "Acrylic pen",
     "image": "art-2.png",
     "series": "Posca dogs",
-    "notes": "Commissioned dogs available."
+    "notes": "Commissioned dogs available.",
+    "orderable": true,
+    "prices": {
+      "A5": 14,
+      "A6": 10,
+      "Greeting Card": 8
+    }
   },
   {
     "title": "Cats",
     "medium": "Acrylic pen",
     "image": "art-3.png",
     "series": "Posca cats",
-    "notes": "Commissioned cats available."
+    "notes": "Commissioned cats available.",
+    "orderable": true
   }
 ]
