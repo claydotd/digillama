@@ -76,8 +76,11 @@ export default function Layout() {
           <Outlet />
         </main>
         <footer className="site-footer">
-          <div className="container">
+          <div className="footer-item">
             <p>&copy; {new Date().getFullYear()} C Leslie. All rights reserved.</p>
+          </div>
+          <div className="footer-item">
+            <p>website by <a href="https://www.analoguegonedigital.co.uk" target="_blank" rel="noopener noreferrer">analoguegonedigital.co.uk</a></p>
           </div>
         </footer>
       </div>

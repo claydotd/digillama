@@ -41,6 +41,13 @@
   padding-block: 2rem;
   /* border-top: 1px solid var(--color-border); */
   text-align: center;
+  column-count: 2;
+  gap: 0.5rem;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .site-footer p {
