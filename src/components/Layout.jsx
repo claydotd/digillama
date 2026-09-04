@@ -1,7 +1,9 @@
 // blobs from https://www.blobmaker.app
 
+import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import Nav from './Nav'
+import CustomCursor from './CustomCursor'
 
 const BLOB_1 = [
   'M51.7,-64.6C66.6,-60.3,77.9,-44.7,77.3,-29.2C76.7,-13.7,64.3,1.6,56.2,15.8C48.2,30,44.5,43.2,35.9,54.3C27.3,65.5,13.6,74.6,1.7,72.2C-10.2,69.8,-20.3,55.8,-31.5,45.5C-42.6,35.2,-54.8,28.5,-63.3,17.1C-71.8,5.7,-76.6,-10.4,-74.1,-25.9C-71.6,-41.4,-61.7,-56.5,-48.2,-61.1C-34.6,-65.8,-17.3,-60.2,0.6,-61C18.4,-61.8,36.8,-68.9,51.7,-64.6Z',
@@ -36,9 +38,15 @@ function BlobMorph({ values, dur }) {
 }
 
 export default function Layout() {
+  const [customCursor, setCustomCursor] = useState(false)
+
   return (
     <div className="site-layout">
-      <Nav />
+      <CustomCursor enabled={customCursor} />
+      <Nav
+        customCursor={customCursor}
+        onCustomCursorChange={setCustomCursor}
+      />
       <div className="site-content">
         <div className="site-blobs" aria-hidden="true">
           <div className="blob-1">

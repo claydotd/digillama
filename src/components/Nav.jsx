@@ -9,7 +9,7 @@ const links = [
   { to: '/contact', label: 'Contact' },
 ]
 
-export default function Nav() {
+export default function Nav({ customCursor, onCustomCursorChange }) {
   const [menuOpen, setMenuOpen] = useState(false)
 
   function closeMenu() {
@@ -56,6 +56,15 @@ export default function Nav() {
               </li>
             ))}
           </ul>
+          <button
+            type="button"
+            className={`nav-cursor-toggle${customCursor ? ' nav-cursor-toggle--on' : ''}`}
+            aria-pressed={customCursor}
+            onClick={() => onCustomCursorChange(!customCursor)}
+          >
+            <span className="nav-cursor-toggle-label">Fun cursor</span>
+            <span className="nav-cursor-toggle-switch" aria-hidden="true" />
+          </button>
         </nav>
       </div>
     </header>

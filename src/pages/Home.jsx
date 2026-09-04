@@ -1,9 +1,29 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
+import artwork from '../artwork.json'
+import { artworkImages } from '../artworkImages.js'
 
 export default function Home() {
   return (
     <div className="page home">
+      <section className="hero container">
+        <p className="hero-eyebrow">eyebrow text goes here</p>
+        <h1>artwork by c leslie</h1>
+        <p className="hero-lead">
+          description text goes here
+        </p>
+        <div className="hero-actions">
+          <Link to="/gallery" className="btn">
+            View gallery
+          </Link>
+          <Link to="/order" className="btn btn--outline">
+            Order prints
+          </Link>
+        </div>
+      </section>
+    </div>
+  )
+}
       {/* <section className="hero container">
         <p className="hero-eyebrow">eyebrow text goes here</p>
         <h1>artwork by c leslie</h1>
@@ -32,6 +52,3 @@ export default function Home() {
           ))}
         </div>
       </section> */}
-    </div>
-  )
-}

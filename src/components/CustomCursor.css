@@ -1,0 +1,67 @@
+.sakura-trail {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sakura-petal {
+  position: absolute;
+  width: var(--size, 16px);
+  height: var(--size, 16px);
+  margin: calc(var(--size, 16px) / -2) 0 0 calc(var(--size, 16px) / -2);
+  background-image: var(--sakura-image);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: sakura-fall var(--life, 1.25s) ease-in forwards;
+}
+
+@keyframes sakura-fall {
+  0% {
+    opacity: 0.7;
+    transform: translate(0, 0) rotate(0deg) scale(0.85);
+  }
+  25% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--drift), var(--drop, 40px)) rotate(var(--spin))
+      scale(0.7);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html.has-custom-cursor,
+  html.has-custom-cursor * {
+    cursor: var(--cursor-star);
+  }
+
+  html.has-custom-cursor a,
+  html.has-custom-cursor a *,
+  html.has-custom-cursor button:not(:disabled),
+  html.has-custom-cursor button:not(:disabled) *,
+  html.has-custom-cursor .btn:not(:disabled),
+  html.has-custom-cursor [role='button']:not(:disabled),
+  html.has-custom-cursor summary,
+  html.has-custom-cursor label,
+  html.has-custom-cursor select,
+  html.has-custom-cursor input[type='submit']:not(:disabled),
+  html.has-custom-cursor input[type='button']:not(:disabled),
+  html.has-custom-cursor input[type='checkbox'],
+  html.has-custom-cursor input[type='radio'] {
+    cursor: var(--cursor-moon);
+  }
+
+  html.has-custom-cursor input:not([type='submit']):not([type='button']):not([type='checkbox']):not([type='radio']):not([type='file']),
+  html.has-custom-cursor textarea {
+    cursor: text;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sakura-trail {
+    display: none;
+  }
+}

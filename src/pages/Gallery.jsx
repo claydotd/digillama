@@ -13,22 +13,23 @@ export default function Gallery() {
       <div className="gallery-grid">
         {artwork.map((work, index) => (
           <article key={`${work.image}-${index}`} className="gallery-item">
-            {artworkImages[work.image] ? (
-              <img
-                className="gallery-image"
-                src={artworkImages[work.image]}
-                alt={work.title}
-              />
-            ) : (
-              <div
-                className="gallery-image gallery-image--missing"
-                aria-hidden="true"
-              />
-            )}
+            <div className="gallery-image-box">
+              {artworkImages[work.image] ? (
+                <img
+                  className="gallery-image"
+                  src={artworkImages[work.image]}
+                  alt={work.title}
+                />
+              ) : (
+                <div
+                  className="gallery-image gallery-image--missing"
+                  aria-hidden="true"
+                />
+              )}
+            </div>
             <div className="gallery-info">
-              <h3>{work.title}</h3>
+              <p classname="gallery-title-medium"><span className="gallery-title">{work.title}</span> <span className="gallery-medium">{work.medium}</span></p>
               {work.series && <p className="gallery-series">{work.series}</p>}
-              <p>{work.medium}</p>
               {work.notes && <p className="gallery-notes">{work.notes}</p>}
             </div>
           </article>

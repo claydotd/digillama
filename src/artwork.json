@@ -1,18 +1,18 @@
 [
   {
-    "title": "North shore",
-    "medium": "Ink on paper",
-    "image": "art-1.png",
-    "series": "Canada",
-    "notes": "Available as original.",
+    "title": "Loch Ewe",
+    "medium": "Digital print",
+    "image": "Catriona Art-1.jpeg",
+    "series": "Countryside",
+    "notes": "Prints available.",
     "orderable": true
   },
   {
-    "title": "Dogs",
-    "medium": "Acrylic pen",
-    "image": "art-2.png",
-    "series": "Posca dogs",
-    "notes": "Commissioned dogs available.",
+    "title": "Balmullo",
+    "medium": "Digital print",
+    "image": "Catriona Art-2.jpeg",
+    "series": "Countryside",
+    "notes": "Prints available.",
     "orderable": true,
     "prices": {
       "A5": 14,
@@ -21,11 +21,125 @@
     }
   },
   {
-    "title": "Cats",
+    "title": "A Kirk In The Countryside",
     "medium": "Acrylic pen",
-    "image": "art-3.png",
-    "series": "Posca cats",
-    "notes": "Commissioned cats available.",
+    "image": "Catriona Art-3.jpeg",
+    "series": "Leith Makers",
+    "notes": "Prints available.",
     "orderable": true
+  },
+  {
+    "title": "A Great Junction",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-4.jpeg",
+    "series": "Leith Makers",
+    "notes": "Prints available.",
+    "orderable": true
+  },
+  {
+    "title": "Castle Rock",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-5.jpeg",
+    "series": "Leith Makers",
+    "notes": "Prints available.",
+    "orderable": true
+  },
+  {
+    "title": "A View From The Links",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-6.jpeg",
+    "series": "Leith Makers",
+    "notes": "Prints available.",
+    "orderable": true
+  },
+  {
+    "title": "Howe Sound",
+    "medium": "Ink on paper",
+    "image": "Catriona Art-7.jpeg",
+    "series": "Canada",
+    "notes": "Original available.",
+    "orderable": true
+  },
+  {
+    "title": "Untitled 1",
+    "medium": "Ink on paper",
+    "image": "Catriona Art-8.jpeg",
+    "series": "Canada",
+    "notes": "Original available.",
+    "orderable": true
+  },
+  {
+    "title": "Untitled 2",
+    "medium": "Ink on paper",
+    "image": "Catriona Art-9.jpeg",
+    "series": "Canada",
+    "notes": "Original available.",
+    "orderable": true
+  },
+  {
+    "title": "Untitled 3",
+    "medium": "Ink on paper",
+    "image": "Catriona Art-10.jpeg",
+    "series": "Canada",
+    "notes": "Original available.",
+    "orderable": true
+  },
+  {
+    "title": "Untitled 4",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-11.jpeg",
+
+    "notes": "Original available.",
+    "orderable": true
+  },
+  {
+    "title": "Posca cats",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-12.jpeg",
+    "notes": "Commissioned cats available",
+    "orderable": true
+  },
+  {
+    "title": "Hello",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-13.jpeg",
+    "orderable": false
+  },
+  {
+    "title": "Posca dogs",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-14.jpeg",
+    "notes": "Commissioned dogs available",
+    "orderable": true
+  },
+  {
+    "title": "Untitled 5",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-15.jpeg",
+    "orderable": false
+  },
+  {
+    "title": "Untitled 6",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-16.jpeg",
+    "orderable": false
+  },
+  {
+    "title": "Untitled 7",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-17.jpeg",
+    "orderable": false
+  },
+  {
+    "title": "Untitled 8",
+    "medium": "Acrylic pen",
+    "image": "Catriona Art-18.jpeg",
+    "orderable": false
+  },
+  {
+    "title": "Untitled 9",
+    "medium": "Linoleum print",
+    "image": "Catriona Art-19.jpeg",
+    "orderable": false
   }
 ]
