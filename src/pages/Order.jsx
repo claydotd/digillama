@@ -423,7 +423,7 @@ export default function Order() {
             <span className="order-total-amount">{formatPrice(total)}</span>
           </section>
         )}
-        <p>When you&apos;re ready to order, click the button below to open your email client and send the pre-filled message.</p>
+        <p><em>Please note, this is a mock-up only. The form is not yet functional, but will be connected to backend functionality once the site is ready to officially go live.</em></p>
         <button
           type="button"
           className="btn-order"
@@ -441,7 +441,7 @@ export default function Order() {
             })}`
           }}
         >
-          Open email
+          Request Order
         </button>
       </form>
     </div>

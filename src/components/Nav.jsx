@@ -20,7 +20,7 @@ export default function Nav({ customCursor, onCustomCursorChange }) {
     <header className="nav-header">
       <div className="nav-inner container">
         <NavLink to="/" className="nav-logo" onClick={closeMenu}>
-          digillama.
+          c+c artworks
         </NavLink>
 
         <button
